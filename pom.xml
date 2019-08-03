@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.scmath</groupId>
+    <artifactId>spring-boot-learning</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <!--简单的springboot程序-->
+        <module>spring-boot-start</module>
+        <!--使用Mybatis访问数据库-->
+        <module>spring-boot-mybatis</module>
+        <!--spring构建的 web项目-->
+        <module>spring-boot-web</module>
+
+    </modules>
+
+
+    <!--<modules>
+        &lt;!&ndash; 我的第一个springboot程序 &ndash;&gt;
+        <module>spring-boot-start</module>
+        &lt;!&ndash; springboot配置详解 &ndash;&gt;
+        <module>spring-boot-config</module>
+        &lt;!&ndash; 整合Thymeleaf模板 &ndash;&gt;
+        <module>spring-boot-thymeleaf</module>
+        &lt;!&ndash; 使用JdbcTemplate访问数据库 &ndash;&gt;
+        <module>spring-boot-jdbctemplate</module>
+        &lt;!&ndash; 使用springDataJpa访问数据库 &ndash;&gt;
+        <module>spring-boot-data-jpa</module>
+        &lt;!&ndash; 使用Mybatis访问数据库 &ndash;&gt;
+        <module>spring-boot-mybatis</module>
+        &lt;!&ndash; Mybatis通用Mapper与分页插件的集成 &ndash;&gt;
+        <module>spring-boot-mybatis-plugin</module>
+        &lt;!&ndash; 整合Lettuce Redis &ndash;&gt;
+        <module>spring-boot-lettuce-redis</module>
+        &lt;!&ndash; cache集成redis &ndash;&gt;
+        <module>spring-boot-cache-redis</module>
+        &lt;!&ndash; 集成swagger &ndash;&gt;
+        <module>spring-boot-swagger</module>
+        &lt;!&ndash; 集成rabbit消息中间件 &ndash;&gt;
+        <module>spring-boot-rabbit-amqp</module>
+        &lt;!&ndash; RabbitMQ 延迟队列 &ndash;&gt;
+        <module>spring-boot-rabbitmq-delay</module>
+        &lt;!&ndash;  强大的 actuator 服务监控与管理 &ndash;&gt;
+        <module>spring-boot-actuator</module>
+        &lt;!&ndash; actuator与spring-boot-admin &ndash;&gt;
+        <module>spring-boot-actuator-admin</module>
+        &lt;!&ndash; 定时任务 &ndash;&gt;
+        <module>spring-boot-task</module>
+        &lt;!&ndash; 文件上传 &ndash;&gt;
+        <module>spring-boot-file-upload</module>
+        &lt;!&ndash; 轻松搞定全局异常 &ndash;&gt;
+        <module>spring-boot-exception</module>
+        &lt;!&ndash; 轻松搞定数据验证 &ndash;&gt;
+        <module>spring-boot-validation1</module>
+
+
+        &lt;!&ndash; springboot 整合 mybatis 并使用HikariCP作为数据库连接池&ndash;&gt;
+        <module>spring-boot-mybatis-hikaricp</module>
+        &lt;!&ndash; RestTemplate &ndash;&gt;
+        <module>spring-boot-rest-template</module>
+        &lt;!&ndash; springboot-rabbitmq各种机制示例 &ndash;&gt;
+        <module>spring-boot-rabbitmq</module>
+        &lt;!&ndash; dubbo 服务 &ndash;&gt;
+        <module>spring-boot-dubbo-service</module>
+        &lt;!&ndash; dubbo 客户端 &ndash;&gt;
+        <module>spring-boot-dubbo-client</module>
+        &lt;!&ndash; springboot mybatis 多数据源的使用 &ndash;&gt;
+        <module>spring-boot-mybatis-mutil-database</module>
+        &lt;!&ndash; admin监控 &ndash;&gt;
+        <module>spring-boot-admin</module>
+        &lt;!&ndash; 监控的端点 &ndash;&gt;
+        <module>spring-boot-actuator-client</module>
+    </modules>-->
+
+</project>
