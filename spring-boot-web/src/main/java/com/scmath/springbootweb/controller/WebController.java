@@ -18,4 +18,8 @@ public class WebController {
         return "this is a simple Web Demo!";
     }
 
+    @GetMapping("/error")
+    public String error() {
+        throw new IllegalArgumentException();
+    }
 }

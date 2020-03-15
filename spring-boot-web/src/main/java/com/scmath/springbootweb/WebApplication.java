@@ -15,7 +15,7 @@ import java.util.Arrays;
 @SpringBootApplication
 public class WebApplication {
 
-    @Bean
+    //@Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         System.out.println("bean----->commandLineRunner(ctx)");
         // 目的是
