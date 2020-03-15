@@ -12,10 +12,22 @@
     <modules>
         <!--简单的springboot程序-->
         <module>spring-boot-start</module>
-        <!--使用Mybatis访问数据库-->
-        <module>spring-boot-mybatis</module>
         <!--spring构建的 web项目-->
         <module>spring-boot-web</module>
+
+        <module>spring-boot-i18n</module>
+        <!--访问数据库-->
+        <module>spring-boot-jdbc</module>
+        <!--使用Mybatis访问数据库-->
+        <module>spring-boot-mybatis</module>
+
+        <module>spring-boot-redis</module>
+
+        <module>spring-boot-druid</module>
+
+        <module>spring-boot-quartz</module>
+
+        <module>spring-boot-oauth2</module>
 
     </modules>
 

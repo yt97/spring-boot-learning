@@ -1,4 +1,4 @@
-package com.scmath.controller;
+package com.scmath.springbootweb.controller;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
@@ -12,9 +12,6 @@ import java.util.Arrays;
  * @author yt
  * @version 1.0
  * @date 2019/8/3/003 18:56
- * @Description TODO
- *
- * @RestController  等同于 （@Controller 与 @ResponseBody）
  */
 @RestController
 public class WebController {
