@@ -1,8 +1,8 @@
-##1.Mapping路径访问
+## 1.Mapping路径访问
    
 
 
-##2.静态资源访问
+## 2.静态资源访问
  默认静态资源的访问路径 `ResourceProperties.class`：
    - /META-INF/resources/,
    - /resources/, 
@@ -11,7 +11,7 @@
    
  可通过 `spring.resources.staticLocations`配置属性修改。
 
-##3. Servlet组件
+## 3. Servlet组件
  ### 3.1 传统web方式，（依赖Servlet3.0的注解）
  - 编写Servlet类并加 `@WebServlet`注解，
  - 需要启用 `@ServletComponentScan`扫描
