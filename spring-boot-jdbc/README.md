@@ -18,3 +18,12 @@
    
 # 3. `JDBCTemplete`工具类
    Spring封装，直接@Autowire注入
+   `jdbcTemplete.execute(sql);`
+   
+# 4. 事务
+`@EnableTransactionManagement`启用事务支持。
+然后在事务方法上加 `@Transactional`
+* 默认只对RuntimeException回滚,非运行时异常不回滚
+* 对`private`函数无效
+* `@Transactional(rollbackFor=Exception.class)`制定策略
+   `@Transactional(norollbackFor=Exception.class)`

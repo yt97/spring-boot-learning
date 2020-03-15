@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class UserDaoImpl implements UserDao {
 
-    private QueryRunner runner = null;
+    private QueryRunner runner;
 
     public UserDaoImpl(){
         runner = new QueryRunner();
