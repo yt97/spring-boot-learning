@@ -8,9 +8,7 @@ import java.util.List;
 
 /**
  * @author yt
- * @version 1.0
  * @date 2019/8/3/003 23:01
- * @Description TODO
  */
 @Mapper
 //@Service

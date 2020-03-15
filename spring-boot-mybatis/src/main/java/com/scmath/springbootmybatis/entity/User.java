@@ -2,9 +2,7 @@ package com.scmath.springbootmybatis.entity;
 
 /**
  * @author yt
- * @version 1.0
  * @date 2019/8/3/003 22:59
- * @Description TODO
  */
 public class User {
 
