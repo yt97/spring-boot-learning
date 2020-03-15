@@ -1,10 +1,12 @@
 package com.scmath.springbootstart;
 
+import com.scmath.springbootstart.bean.Cat;
+import com.scmath.springbootstart.bean.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.util.ClassUtils;
+
 
 /**
  * @author Administrator
@@ -24,11 +26,17 @@ public class StartApplication {
         // 第二种启动方式 (直接调用静态的run方法，其内部实现同①)
         //ApplicationContext context = SpringApplication.run(StartApplication.class, args);
 
-        System.out.println(context.getBean("cat"));
+        Person person = (Person) context.getBean("person");
+        System.out.println(person);
+
+        Cat cat = (Cat) context.getBean("cat");
+        System.out.println(cat);
+
 
         // Tips： ClassUtils工具类，判断是否存在InputStream类
         boolean present = ClassUtils.isPresent("java.io.InputStream", null);
         System.out.println(present);
+
 
         context.close();
     }

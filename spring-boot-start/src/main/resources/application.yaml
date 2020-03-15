@@ -1,0 +1,22 @@
+
+##  配置文件的自动提示， META-INF/spring-configuration-metadata.json
+cat:
+  name: 猫
+  age: 3
+
+
+person:
+  last-name: "tony"
+  age: 18
+  birth: 2019/12/12
+  boss: true
+  list:
+    - 20
+    - "hello"
+  dog:
+    name: 小狗
+    age: 2
+  maps: {"k1":"v1", "k2":"v2"}
+
+
+
