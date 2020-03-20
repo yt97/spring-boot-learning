@@ -56,3 +56,54 @@
 ### 8.2 代码定制
 
 关键类
+
+
+## 9. 日志
+默认日志框架 ：logback
+
+  三大模块：
+   * logback-core
+   * logback-classic
+   * logback-access
+   
+Logback核心对象：
+
+  * Logger：日志记录器
+  * Appender：指定日志输出的目的地，控制台或文件
+  * Layout：日志布局，格式化日志信息的输出
+  
+日志级别： Trace < Debug < Info < Warn < Error
+
+日志示例：
+    
+    ===========log4j 设置 ==================
+    log4j.rootLogger = debug,stdout,D,E
+    
+    ======== 输出到控制台 ===============
+    log4j.appender.stdout = org.apache.log4j.ConsoleAppender
+    log4j.appender.stdout.Target = System.out
+    log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
+    log4j.appender.stdout.layout.ConversionPattern =
+            [%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l%n%m%n
+        
+    ==== 输出Debug级别的日志到 D://logs/debug.log ===============
+    log4j.appender.D = org.apache.log4j.DailyRollingFileAppender
+    log4j.appender.D.File = D://logs/debug.log
+    log4j.appender.D.Appender = true
+    log4j.appender.D.Threshold = DEBUG
+    log4j.appender.D.layout = org.apache.log4j.PatternLayout
+    log4j.appender.D.layout.ConversionPattern =
+            %-d{yyyy-MM-dd HH:mm:ss} [%t:%r]-[%p] %m%n
+     
+    ==== 输出Error级别的日志到 D://logs/error.log ===============
+    log4j.appender.E = org.apache.log4j.DailyRollingFileAppender
+    log4j.appender.E.File = D://logs/error.log
+    log4j.appender.E.Appender = true
+    log4j.appender.E.Threshold = ERROR
+    log4j.appender.E.layout = org.apache.log4j.PatternLayout
+    log4j.appender.E.layout.ConversionPattern =
+            %-d{yyyy-MM-dd HH:mm:ss} [%t:%r]-[%p] %m%n
+                      
+    
+    
+    
